@@ -1,16 +1,39 @@
 <template>
   <div class="wrapper">
     <image :src="logo" class="logo"></image>
-    <text class="greeting">The environment is ready!</text>
-    <text class="message">Now, let's use Vue.js to build your Weex app.</text>
+    <text class="Component" @click="listClicked">list</text>
+    <text class="Component" @click="scrollerClicked">scroller</text>
+    <text class="Component" @click="recyclelistClicked">recycle_list</text>
   </div>
 </template>
 
 <script>
+  var navigator = weex.requireModule('navigator')
+  var modal = weex.requireModule('modal')
   export default {
     data () {
       return {
         logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png',
+      }
+    },
+    methods:{
+      listClicked (event) {
+        navigator.push({
+          url: 'http://dotwe.org/raw/dist/ad2b60837c38d4f0b23670a0d5a2ace5.bundle.wx',
+          animated: "true"
+        }, event => {
+          modal.toast({ message: 'callback: ' + event })
+        })
+      },
+      scrollerClicked (event) {
+        navigator.push({
+          url: 'http://dotwe.org/raw/dist/ad2b60837c38d4f0b23670a0d5a2ace5.bundle.wx',
+          animated: "true"
+        }, event => {
+          modal.toast({ message: 'callback: ' + event })
+        })
+      },
+      recyclelistClicked (event) {
       }
     }
   }
@@ -25,14 +48,9 @@
     width: 424px;
     height: 200px;
   }
-  .greeting {
+  .Component {
     margin-top: 70px;
     font-size: 50px;
     color: #41B883;
-  }
-  .message {
-    margin: 30px;
-    font-size: 32px;
-    color: #727272;
   }
 </style>

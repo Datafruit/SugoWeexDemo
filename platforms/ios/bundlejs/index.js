@@ -126,18 +126,10 @@ module.exports = {
     "width": "424",
     "height": "200"
   },
-  "greeting": {
+  "Component": {
     "marginTop": "70",
     "fontSize": "50",
     "color": "#41B883"
-  },
-  "message": {
-    "marginTop": "30",
-    "marginRight": "30",
-    "marginBottom": "30",
-    "marginLeft": "30",
-    "fontSize": "32",
-    "color": "#727272"
   }
 }
 
@@ -159,12 +151,35 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
 
+var navigator = weex.requireModule('navigator');
+var modal = weex.requireModule('modal');
 exports.default = {
   data: function data() {
     return {
       logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
     };
+  },
+
+  methods: {
+    listClicked: function listClicked(event) {
+      navigator.push({
+        url: 'http://dotwe.org/raw/dist/ad2b60837c38d4f0b23670a0d5a2ace5.bundle.wx',
+        animated: "true"
+      }, function (event) {
+        modal.toast({ message: 'callback: ' + event });
+      });
+    },
+    scrollerClicked: function scrollerClicked(event) {
+      navigator.push({
+        url: 'http://dotwe.org/raw/dist/ad2b60837c38d4f0b23670a0d5a2ace5.bundle.wx',
+        animated: "true"
+      }, function (event) {
+        modal.toast({ message: 'callback: ' + event });
+      });
+    },
+    recyclelistClicked: function recyclelistClicked(event) {}
   }
 };
 
@@ -181,10 +196,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": _vm.logo
     }
   }), _c('text', {
-    staticClass: ["greeting"]
-  }, [_vm._v("The environment is ready!")]), _c('text', {
-    staticClass: ["message"]
-  }, [_vm._v("Now, let's use Vue.js to build your Weex app.")])])
+    staticClass: ["Component"],
+    on: {
+      "click": _vm.listClicked
+    }
+  }, [_vm._v("list")]), _c('text', {
+    staticClass: ["Component"],
+    on: {
+      "click": _vm.scrollerClicked
+    }
+  }, [_vm._v("scroller")]), _c('text', {
+    staticClass: ["Component"],
+    on: {
+      "click": _vm.recyclelistClicked
+    }
+  }, [_vm._v("recycle_list")])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
