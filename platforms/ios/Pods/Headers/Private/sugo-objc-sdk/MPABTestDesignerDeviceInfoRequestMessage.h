@@ -1,0 +1,1 @@
+../../../sugo-objc-sdk/Sugo/MPABTestDesignerDeviceInfoRequestMessage.h

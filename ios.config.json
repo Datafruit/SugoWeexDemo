@@ -1,0 +1,9 @@
+{
+   "AppName":"SugoWeexDemo",
+   "Version":"0.1",
+   "BuildVersion":"0.1.0",
+   "AppId":"io.sugo.weex",
+   "CodeSign":"",
+   "Profile":"",
+   "WeexBundle":"index.js"
+}

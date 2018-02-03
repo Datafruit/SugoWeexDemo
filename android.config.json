@@ -1,0 +1,6 @@
+{
+  "AppName":"SugoWeexDemo",
+  "AppId":"io.sugo.weex",
+  "SplashText":"Hello\nWeex",
+  "WeexBundle":"index.js"
+}
