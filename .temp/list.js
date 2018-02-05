@@ -16,6 +16,6 @@ import weex from 'weex-vue-render';
 
 weex.init(Vue);
 
-const App = require('../src/list.vue');
+const App = require('..\\src\\list.vue');
 App.el = '#root';
 new Vue(App);
