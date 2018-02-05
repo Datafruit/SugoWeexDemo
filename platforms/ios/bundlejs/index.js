@@ -151,7 +151,6 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
 
 
 var navigator = weex.requireModule('navigator');
@@ -223,12 +222,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.scrollerClicked
     }
-  }, [_vm._v("scroller")]), _c('text', {
-    staticClass: ["Component"],
-    on: {
-      "click": _vm.recyclelistClicked
-    }
-  }, [_vm._v("recycle_list")])])
+  }, [_vm._v("scroller")])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

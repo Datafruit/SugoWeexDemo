@@ -91,5 +91,13 @@
   <string>bundlejs/index.js</string>
   <key>WXSocketConnectionURL</key>
   <string></string>
+  <key>WXEntryBundleURL</key>
+  <string>bundlejs/index.js</string>
+  <key>WXSocketConnectionURL</key>
+  <string></string>
+  <key>WXEntryBundleURL</key>
+  <string>bundlejs/index.js</string>
+  <key>WXSocketConnectionURL</key>
+  <string></string>
 </dict>
 </plist>

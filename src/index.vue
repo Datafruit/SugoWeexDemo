@@ -3,7 +3,6 @@
     <image :src="logo" class="logo"></image>
     <text class="Component" @click="listClicked">list</text>
     <text class="Component" @click="scrollerClicked">scroller</text>
-    <text class="Component" @click="recyclelistClicked">recycle_list</text>
   </div>
 </template>
 

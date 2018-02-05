@@ -530,7 +530,7 @@ exports.default = {
 
   methods: {
     clicked: function clicked() {
-      modal.toast({ message: 'clicked' });
+      // modal.toast({ message: 'clicked'})
     }
   }
 };

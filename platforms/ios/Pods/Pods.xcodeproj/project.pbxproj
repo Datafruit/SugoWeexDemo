@@ -584,7 +584,7 @@
 		0BA0274C5221591560B0B0E218204B78 /* WXRefreshComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXRefreshComponent.h; path = ios/sdk/WeexSDK/Sources/Component/WXRefreshComponent.h; sourceTree = "<group>"; };
 		0C7FEAC7313BB7E2A18765C8386562AE /* MPTypeDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPTypeDescription.h; path = Sugo/MPTypeDescription.h; sourceTree = "<group>"; };
 		0CBAFE288E7065B6087675E104D7214C /* WXComponentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXComponentManager.h; path = ios/sdk/WeexSDK/Sources/Manager/WXComponentManager.h; sourceTree = "<group>"; };
-		0CC8B733DCB7F54DC85C34B78C65D38F /* SugoioKit.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = SugoioKit.js; path = Sugo/SugoioKit.js; sourceTree = "<group>"; };
+		0CC8B733DCB7F54DC85C34B78C65D38F /* SugoioKit.js */ = {isa = PBXFileReference; includeInIndex = 1; name = SugoioKit.js; path = Sugo/SugoioKit.js; sourceTree = "<group>"; };
 		0CE9319565A6B59A9E0804D7B1276A3E /* WXRecyclerUpdateController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXRecyclerUpdateController.h; path = ios/sdk/WeexSDK/Sources/Component/Recycler/WXRecyclerUpdateController.h; sourceTree = "<group>"; };
 		0D00C018DF7FFFF44AA1D750C6ED7BBA /* WXHandlerFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXHandlerFactory.h; path = ios/sdk/WeexSDK/Sources/Manager/WXHandlerFactory.h; sourceTree = "<group>"; };
 		0D4B1D2EEEFBBD3C14B1145AC5DCCA7D /* WXSDKInstance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXSDKInstance.m; path = ios/sdk/WeexSDK/Sources/Model/WXSDKInstance.m; sourceTree = "<group>"; };
@@ -641,7 +641,7 @@
 		2696B366AB0FABDC08C8A68A5E99B050 /* WebViewInfoStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewInfoStorage.m; path = Sugo/WebViewInfoStorage.m; sourceTree = "<group>"; };
 		27969692987DC34FF5CA62A4AFE78A5A /* WXErrorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXErrorView.h; path = ios/sdk/WeexSDK/Sources/View/WXErrorView.h; sourceTree = "<group>"; };
 		282B6E6347A472FF50FD4340A50B869A /* WXInnerLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXInnerLayer.m; path = ios/sdk/WeexSDK/Sources/Display/WXInnerLayer.m; sourceTree = "<group>"; };
-		2877E0C89F38CDF9A734B19D26827F90 /* WXComponent+DataBinding.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = "WXComponent+DataBinding.mm"; path = "ios/sdk/WeexSDK/Sources/Component/RecycleList/WXComponent+DataBinding.mm"; sourceTree = "<group>"; };
+		2877E0C89F38CDF9A734B19D26827F90 /* WXComponent+DataBinding.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "WXComponent+DataBinding.mm"; path = "ios/sdk/WeexSDK/Sources/Component/RecycleList/WXComponent+DataBinding.mm"; sourceTree = "<group>"; };
 		288B664F29B3846270C8D3907DD740FC /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		2A308D3D886A16AB8B62E5C7B1AA2D8E /* WXLoadingIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXLoadingIndicator.m; path = ios/sdk/WeexSDK/Sources/Component/WXLoadingIndicator.m; sourceTree = "<group>"; };
 		2ACB70CCD2E3B4D1B83459594A5DA200 /* WXRuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXRuleManager.h; path = ios/sdk/WeexSDK/Sources/Manager/WXRuleManager.h; sourceTree = "<group>"; };
@@ -650,11 +650,11 @@
 		2B32CE2AB9ED85F0E374F9F6AE7CDE14 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
 		2B397A04DFD636170EB01659E5C49411 /* WXTracingManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXTracingManager.h; path = ios/sdk/WeexSDK/Sources/Manager/WXTracingManager.h; sourceTree = "<group>"; };
 		2C1A24CC823532B12B549A89E3BC3D28 /* WXConvert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXConvert.h; path = ios/sdk/WeexSDK/Sources/Utility/WXConvert.h; sourceTree = "<group>"; };
-		2CAC2CE9B48FA0DBA6CB53956427E6F8 /* WXRoundedRect.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = WXRoundedRect.mm; path = ios/sdk/WeexSDK/Sources/Display/WXRoundedRect.mm; sourceTree = "<group>"; };
+		2CAC2CE9B48FA0DBA6CB53956427E6F8 /* WXRoundedRect.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = WXRoundedRect.mm; path = ios/sdk/WeexSDK/Sources/Display/WXRoundedRect.mm; sourceTree = "<group>"; };
 		2CF71AD24ACCF88122BFD2416A15614A /* WXRuleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXRuleManager.m; path = ios/sdk/WeexSDK/Sources/Manager/WXRuleManager.m; sourceTree = "<group>"; };
 		2D53BE10B59D3F15B5A670B931F18A09 /* MPNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPNetwork.m; path = Sugo/MPNetwork.m; sourceTree = "<group>"; };
 		2D8ACB49395796BD0F875DF912DFF8FD /* WXJSExceptionInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXJSExceptionInfo.m; path = ios/sdk/WeexSDK/Sources/Model/WXJSExceptionInfo.m; sourceTree = "<group>"; };
-		2DE25795915ACB721B0FD1626E4A24C4 /* libWeexSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWeexSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE25795915ACB721B0FD1626E4A24C4 /* libWeexSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWeexSDK.a; path = libWeexSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6F34AEE647E72867B636A32C06C760 /* AutomaticEventsConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AutomaticEventsConstants.h; path = Sugo/AutomaticEventsConstants.h; sourceTree = "<group>"; };
 		2FD9EF35C3CCBC6B8322DFB1BA31BF92 /* WXListComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXListComponent.m; path = ios/sdk/WeexSDK/Sources/Component/WXListComponent.m; sourceTree = "<group>"; };
 		2FEAE7E73CF7678E6E6C1DA9737443DD /* WXResourceRequestHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXResourceRequestHandler.h; path = ios/sdk/WeexSDK/Sources/Network/WXResourceRequestHandler.h; sourceTree = "<group>"; };
@@ -664,7 +664,7 @@
 		31520E4DDE671ACB65D57EA704F375ED /* Sugo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sugo.h; path = Sugo/Sugo.h; sourceTree = "<group>"; };
 		315D6A13496A714875848B5A8FC0BF51 /* WXComponent+BoxShadow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WXComponent+BoxShadow.h"; path = "ios/sdk/WeexSDK/Sources/Display/WXComponent+BoxShadow.h"; sourceTree = "<group>"; };
 		3193B29AB02697D30F7E8C2963799033 /* WXLoadingComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXLoadingComponent.h; path = ios/sdk/WeexSDK/Sources/Component/WXLoadingComponent.h; sourceTree = "<group>"; };
-		31E2C0E33D4C0167E4D26A164A4032F8 /* native-bundle-main.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = "native-bundle-main.js"; path = "pre-build/native-bundle-main.js"; sourceTree = "<group>"; };
+		31E2C0E33D4C0167E4D26A164A4032F8 /* native-bundle-main.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "native-bundle-main.js"; path = "pre-build/native-bundle-main.js"; sourceTree = "<group>"; };
 		321830E0247DA87B0E123F9C635A99B3 /* WXNavigatorModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXNavigatorModule.m; path = ios/sdk/WeexSDK/Sources/Module/WXNavigatorModule.m; sourceTree = "<group>"; };
 		334BFCF61915A308BEA72E4969EA0C03 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
 		334D5C3DA357941B49D93D1D1E9362F8 /* wx_load_error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "wx_load_error@3x.png"; path = "ios/sdk/WeexSDK/Resources/wx_load_error@3x.png"; sourceTree = "<group>"; };
@@ -676,7 +676,7 @@
 		353AF8F98C6DB27FCAF7768AFF3FA6C8 /* MPResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPResources.h; path = Sugo/MPResources.h; sourceTree = "<group>"; };
 		3544F06438FBDECDF9E3AFADD50F69E0 /* WXRecyclerComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXRecyclerComponent.m; path = ios/sdk/WeexSDK/Sources/Component/Recycler/WXRecyclerComponent.m; sourceTree = "<group>"; };
 		354C32AB2C5D55B317715AC935FBE6D3 /* WXCycleSliderComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXCycleSliderComponent.m; path = ios/sdk/WeexSDK/Sources/Component/WXCycleSliderComponent.m; sourceTree = "<group>"; };
-		366DCB16090CE7581648E3D55E5FB13E /* libPods-WeexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		366DCB16090CE7581648E3D55E5FB13E /* libPods-WeexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WeexDemo.a"; path = "libPods-WeexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3803DE64ACA4AFC862283C015E4A299B /* MPABTestDesignerClearResponseMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPABTestDesignerClearResponseMessage.m; path = Sugo/MPABTestDesignerClearResponseMessage.m; sourceTree = "<group>"; };
 		385674FB35554D5947A5151EA8BEB13E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		3A4D80572E4E20C2092D6A6B01E3C297 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
@@ -692,18 +692,18 @@
 		3E503B735255AE3DDBF6242869987EB2 /* WXComponent+DataBinding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WXComponent+DataBinding.h"; path = "ios/sdk/WeexSDK/Sources/Component/RecycleList/WXComponent+DataBinding.h"; sourceTree = "<group>"; };
 		3ED7B2DD1846F0DA353CBAAB646FC7B4 /* Pods-WeexDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeexDemo-resources.sh"; sourceTree = "<group>"; };
 		3EEEC23A5B323045CA8792530264957F /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
-		402BBDA707517882D2B01AC68309EB65 /* libPods-WeexUITestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeexUITestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		402BBDA707517882D2B01AC68309EB65 /* libPods-WeexUITestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WeexUITestDemo.a"; path = "libPods-WeexUITestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40530738858AE1E72B2BEDC1338F04AE /* WXDiffUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXDiffUtil.m; path = ios/sdk/WeexSDK/Sources/Utility/WXDiffUtil.m; sourceTree = "<group>"; };
 		412A53417EF36DC63C467A38ACCF06C6 /* WXAppMonitorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXAppMonitorProtocol.h; path = ios/sdk/WeexSDK/Sources/Protocol/WXAppMonitorProtocol.h; sourceTree = "<group>"; };
 		419B59E6022A820B44FDC0A44EDF0259 /* HeatMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HeatMap.h; path = Sugo/HeatMap.h; sourceTree = "<group>"; };
-		41C0D73AD5DD7539A5F5CE9164DAB945 /* WebViewExcute.Sugo.UI.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = WebViewExcute.Sugo.UI.js; path = Sugo/WebViewExcute.Sugo.UI.js; sourceTree = "<group>"; };
+		41C0D73AD5DD7539A5F5CE9164DAB945 /* WebViewExcute.Sugo.UI.js */ = {isa = PBXFileReference; includeInIndex = 1; name = WebViewExcute.Sugo.UI.js; path = Sugo/WebViewExcute.Sugo.UI.js; sourceTree = "<group>"; };
 		4238E60E8051765743FECB5390BCAFD2 /* sugo-objc-sdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "sugo-objc-sdk-dummy.m"; sourceTree = "<group>"; };
 		4275247DBFCF64445E424872582EB8B2 /* WXComponent+PseudoClassManagement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WXComponent+PseudoClassManagement.m"; path = "ios/sdk/WeexSDK/Sources/View/WXComponent+PseudoClassManagement.m"; sourceTree = "<group>"; };
 		429C62B798DC409ACF813931F2A8F8EF /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
 		429E6BE1A1AD787A2C97092906EB33E0 /* NSObject+WXSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+WXSwizzle.m"; path = "ios/sdk/WeexSDK/Sources/Utility/NSObject+WXSwizzle.m"; sourceTree = "<group>"; };
 		43CE1AC55968E65DA822C37A032E05D1 /* WXTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXTransition.m; path = ios/sdk/WeexSDK/Sources/Module/WXTransition.m; sourceTree = "<group>"; };
 		444B0D860195590E6C9C9E33D0FAC79A /* WeexSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WeexSDK-prefix.pch"; sourceTree = "<group>"; };
-		448ECEE73A502A6DA85AD2967819405A /* WXJSASTParser.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = WXJSASTParser.mm; path = ios/sdk/WeexSDK/Sources/Component/RecycleList/WXJSASTParser.mm; sourceTree = "<group>"; };
+		448ECEE73A502A6DA85AD2967819405A /* WXJSASTParser.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = WXJSASTParser.mm; path = ios/sdk/WeexSDK/Sources/Component/RecycleList/WXJSASTParser.mm; sourceTree = "<group>"; };
 		44B2F6A12C6FFC7E4B1A608F6F4B8880 /* WXLength.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXLength.m; path = ios/sdk/WeexSDK/Sources/Utility/WXLength.m; sourceTree = "<group>"; };
 		44B8BF2FD25B2EF7D766D60096A25EFF /* UIImage+MPImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MPImageEffects.h"; path = "Sugo/UIImage+MPImageEffects.h"; sourceTree = "<group>"; };
 		44BA18CB10B8B42BA021D5B4ED40A3EA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
@@ -770,7 +770,7 @@
 		60136F7A0089D92B6696C36D430A8A08 /* MPDesignerEventBindingResponseMesssage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPDesignerEventBindingResponseMesssage.m; path = Sugo/MPDesignerEventBindingResponseMesssage.m; sourceTree = "<group>"; };
 		6165A1D5155D8D2FD20C011C763B3423 /* WXDomModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXDomModule.m; path = ios/sdk/WeexSDK/Sources/Module/WXDomModule.m; sourceTree = "<group>"; };
 		61F8B81A3BE0716597F4C0C70965E9DC /* WXModalUIModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXModalUIModule.h; path = ios/sdk/WeexSDK/Sources/Module/WXModalUIModule.h; sourceTree = "<group>"; };
-		62060533789514450E9CF4152643C58A /* WebViewBindings.UI.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = WebViewBindings.UI.js; path = Sugo/WebViewBindings.UI.js; sourceTree = "<group>"; };
+		62060533789514450E9CF4152643C58A /* WebViewBindings.UI.js */ = {isa = PBXFileReference; includeInIndex = 1; name = WebViewBindings.UI.js; path = Sugo/WebViewBindings.UI.js; sourceTree = "<group>"; };
 		63472C8E3FE7D21831530BB83F84996E /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
 		6404DDEDEF4CF415D9FEDB67AFF7FF25 /* WebViewBindings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewBindings.m; path = Sugo/WebViewBindings.m; sourceTree = "<group>"; };
 		6599691D8CB6F4C40C83EED74FEB8D3C /* MPCGColorRefToNSStringValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPCGColorRefToNSStringValueTransformer.m; path = Sugo/MPCGColorRefToNSStringValueTransformer.m; sourceTree = "<group>"; };
@@ -811,9 +811,9 @@
 		7769825DE4D70C85BB0F362DBDAAB7A2 /* WXCanvasModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXCanvasModule.m; path = ios/sdk/WeexSDK/Sources/Module/WXCanvasModule.m; sourceTree = "<group>"; };
 		77B0E8734535ADB28BAF0EBE847E58FD /* Attributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Attributes.m; path = Sugo/Attributes.m; sourceTree = "<group>"; };
 		77D4552F86614236DEF888D0FD4C57E9 /* WXComponent+Layout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WXComponent+Layout.m"; path = "ios/sdk/WeexSDK/Sources/Layout/WXComponent+Layout.m"; sourceTree = "<group>"; };
-		783E356E5DBB0C2727560234B707C477 /* libsugo-objc-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libsugo-objc-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		783E356E5DBB0C2727560234B707C477 /* libsugo-objc-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libsugo-objc-sdk.a"; path = "libsugo-objc-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795D1E5E30F6CA4107CF6E319CE39A4D /* UIBezierPath+Weex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+Weex.m"; path = "ios/sdk/WeexSDK/Sources/Display/UIBezierPath+Weex.m"; sourceTree = "<group>"; };
-		7A52B5EC8FB6261DF4FF64698C641CC9 /* WebViewAPI.WK.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = WebViewAPI.WK.js; path = Sugo/WebViewAPI.WK.js; sourceTree = "<group>"; };
+		7A52B5EC8FB6261DF4FF64698C641CC9 /* WebViewAPI.WK.js */ = {isa = PBXFileReference; includeInIndex = 1; name = WebViewAPI.WK.js; path = Sugo/WebViewAPI.WK.js; sourceTree = "<group>"; };
 		7B55876A9F9206D11CC0435268153565 /* WXResourceRequestHandlerDefaultImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXResourceRequestHandlerDefaultImpl.h; path = ios/sdk/WeexSDK/Sources/Network/WXResourceRequestHandlerDefaultImpl.h; sourceTree = "<group>"; };
 		7B6E62E9750C63523901310C386BA221 /* WXLength.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXLength.h; path = ios/sdk/WeexSDK/Sources/Utility/WXLength.h; sourceTree = "<group>"; };
 		7BD459F8647DA266A1A3D84A3F1184B0 /* WXThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXThreadSafeMutableDictionary.h; path = ios/sdk/WeexSDK/Sources/Utility/WXThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
@@ -828,7 +828,7 @@
 		7F114BB67F82A8FC40F739389B0149C2 /* MPABTestDesignerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPABTestDesignerConnection.m; path = Sugo/MPABTestDesignerConnection.m; sourceTree = "<group>"; };
 		7F3270741802CC15ECC523AA4E993559 /* WXNetworkProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXNetworkProtocol.h; path = ios/sdk/WeexSDK/Sources/Protocol/WXNetworkProtocol.h; sourceTree = "<group>"; };
 		7F5BBB0C5F8454A89D33F3AADC422591 /* MPObjectSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPObjectSelector.h; path = Sugo/MPObjectSelector.h; sourceTree = "<group>"; };
-		7FDC6CE3FEC887ACE2C545966D369141 /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FDC6CE3FEC887ACE2C545966D369141 /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSocketRocket.a; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		805380AE97AAA9C235BE6330742352E6 /* MPUIFontToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPUIFontToNSDictionaryValueTransformer.m; path = Sugo/MPUIFontToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
 		806ACFD84FAC802851082B308A93BC7B /* NSNotificationCenter+AutomaticEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AutomaticEvents.h"; path = "Sugo/NSNotificationCenter+AutomaticEvents.h"; sourceTree = "<group>"; };
 		809533A4B8AB91415E4862CA19EA8295 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -843,14 +843,14 @@
 		860B43015F12862C3C8D4011003B7748 /* MPNSAttributedStringToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPNSAttributedStringToNSDictionaryValueTransformer.m; path = Sugo/MPNSAttributedStringToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
 		860D2B7920BE762B11539E56F9BBB831 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		863751CEE9D6477385D696351AAB5067 /* WXWeakObjectWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXWeakObjectWrapper.m; path = ios/sdk/WeexSDK/Sources/Utility/WXWeakObjectWrapper.m; sourceTree = "<group>"; };
-		86ECE3560CC4742A242F93E96ECC9A78 /* WebViewHeatmap.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = WebViewHeatmap.js; path = Sugo/WebViewHeatmap.js; sourceTree = "<group>"; };
+		86ECE3560CC4742A242F93E96ECC9A78 /* WebViewHeatmap.js */ = {isa = PBXFileReference; includeInIndex = 1; name = WebViewHeatmap.js; path = Sugo/WebViewHeatmap.js; sourceTree = "<group>"; };
 		872862DB4605F92B7E8A1F793D9E966A /* WebViewBindings+WKWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WebViewBindings+WKWebView.h"; path = "Sugo/WebViewBindings+WKWebView.h"; sourceTree = "<group>"; };
 		875F97A275ABD7D72F6B11CFDE23B08F /* WXImageComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXImageComponent.h; path = ios/sdk/WeexSDK/Sources/Component/WXImageComponent.h; sourceTree = "<group>"; };
 		88C6B9D13A50A2E98C8489E11AB7596B /* Pods-WeexUITestDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeexUITestDemo-resources.sh"; sourceTree = "<group>"; };
 		88F9583B145C706ABF836F7DD3BB6863 /* Pods-WeexDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeexDemo.release.xcconfig"; sourceTree = "<group>"; };
-		8913AE05E61009E6C23F2683337CB7B0 /* WebViewAPI.UI.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = WebViewAPI.UI.js; path = Sugo/WebViewAPI.UI.js; sourceTree = "<group>"; };
+		8913AE05E61009E6C23F2683337CB7B0 /* WebViewAPI.UI.js */ = {isa = PBXFileReference; includeInIndex = 1; name = WebViewAPI.UI.js; path = Sugo/WebViewAPI.UI.js; sourceTree = "<group>"; };
 		8A0B84A1E9FE6F6EB835C028D2D732E7 /* WXBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXBaseViewController.h; path = ios/sdk/WeexSDK/Sources/Controller/WXBaseViewController.h; sourceTree = "<group>"; };
-		8B18B6BC47335072B64DDDF112ACCD57 /* SugoEnd.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = SugoEnd.js; path = Sugo/SugoEnd.js; sourceTree = "<group>"; };
+		8B18B6BC47335072B64DDDF112ACCD57 /* SugoEnd.js */ = {isa = PBXFileReference; includeInIndex = 1; name = SugoEnd.js; path = Sugo/SugoEnd.js; sourceTree = "<group>"; };
 		8BA1D84A357F7525E8CB3D53F8AB0B43 /* WXGlobalEventModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXGlobalEventModule.h; path = ios/sdk/WeexSDK/Sources/Module/WXGlobalEventModule.h; sourceTree = "<group>"; };
 		8C2FF32BF9D89B98012C0BD56893DD68 /* Sugo+Weex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Sugo+Weex.m"; path = "Sugo/Weex/Sugo+Weex.m"; sourceTree = "<group>"; };
 		8C47D0551961512BFF08A4AFBD2172FF /* WXTracingManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXTracingManager.m; path = ios/sdk/WeexSDK/Sources/Manager/WXTracingManager.m; sourceTree = "<group>"; };
@@ -867,7 +867,7 @@
 		9273B63AE6E3CFE5767FBC34E17D6DE9 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
 		92B820724A783F3E411EC534A7A51072 /* MPSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPSwizzler.m; path = Sugo/MPSwizzler.m; sourceTree = "<group>"; };
 		92D5C7AB6704985816AF6E1C5942090A /* WXJSExceptionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXJSExceptionInfo.h; path = ios/sdk/WeexSDK/Sources/Model/WXJSExceptionInfo.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9472BA0BE4C2A85B5EDBA4B43AC75909 /* WXDivComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXDivComponent.h; path = ios/sdk/WeexSDK/Sources/Component/WXDivComponent.h; sourceTree = "<group>"; };
 		95B5BB012E36C527F99CF7CE37DA6C72 /* MPTypeDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPTypeDescription.m; path = Sugo/MPTypeDescription.m; sourceTree = "<group>"; };
 		95D4027F46B665496D61510120415F55 /* SugoPeople.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SugoPeople.h; path = Sugo/SugoPeople.h; sourceTree = "<group>"; };
@@ -900,7 +900,7 @@
 		A0EFEB241B014F424A559CFC6CB22F28 /* WXModuleMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXModuleMethod.h; path = ios/sdk/WeexSDK/Sources/Bridge/WXModuleMethod.h; sourceTree = "<group>"; };
 		A11254DED8125EF437679C71E6AD4725 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		A12173E6D381C4D9E27C659BCF226FBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A126D5144BE259887E4795EEE9FBE10D /* SugoBegin.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = SugoBegin.js; path = Sugo/SugoBegin.js; sourceTree = "<group>"; };
+		A126D5144BE259887E4795EEE9FBE10D /* SugoBegin.js */ = {isa = PBXFileReference; includeInIndex = 1; name = SugoBegin.js; path = Sugo/SugoBegin.js; sourceTree = "<group>"; };
 		A326CF7EA8860CF9DDB2C13D6FD9C440 /* WXWebSocketModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXWebSocketModule.h; path = ios/sdk/WeexSDK/Sources/Module/WXWebSocketModule.h; sourceTree = "<group>"; };
 		A375C518B542EA562720F61E4BD03252 /* MPObjectSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPObjectSerializer.h; path = Sugo/MPObjectSerializer.h; sourceTree = "<group>"; };
 		A3A9B23392FE4E32922905C28B21B39B /* WebViewBindings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewBindings.h; path = Sugo/WebViewBindings.h; sourceTree = "<group>"; };
@@ -910,7 +910,7 @@
 		A4ECCD78BB8062B1133E442CA7591073 /* NSTimer+Weex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+Weex.h"; path = "ios/sdk/WeexSDK/Sources/Utility/NSTimer+Weex.h"; sourceTree = "<group>"; };
 		A6AF1D18489A81E04EB99A38CB6B9938 /* WXPolyfillSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXPolyfillSet.m; path = ios/sdk/WeexSDK/Sources/Bridge/WXPolyfillSet.m; sourceTree = "<group>"; };
 		A7D7EC6852D9AE90F326D4B2B7C07946 /* MPNetworkPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPNetworkPrivate.h; path = Sugo/MPNetworkPrivate.h; sourceTree = "<group>"; };
-		A850FDE9EB3C75F2CB342C1DA6CCD0E0 /* WebViewVariables.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = WebViewVariables.js; path = Sugo/WebViewVariables.js; sourceTree = "<group>"; };
+		A850FDE9EB3C75F2CB342C1DA6CCD0E0 /* WebViewVariables.js */ = {isa = PBXFileReference; includeInIndex = 1; name = WebViewVariables.js; path = Sugo/WebViewVariables.js; sourceTree = "<group>"; };
 		A939A9C67DBC24E11891BCAA6F19A52A /* WXComponent+Display.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WXComponent+Display.h"; path = "ios/sdk/WeexSDK/Sources/Display/WXComponent+Display.h"; sourceTree = "<group>"; };
 		AA5B05B78A12157A556E25AA9E043DCF /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		AAA2B68FC441E93E46CAF8C6EDECAB1D /* WXEmbedComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXEmbedComponent.m; path = ios/sdk/WeexSDK/Sources/Component/WXEmbedComponent.m; sourceTree = "<group>"; };
@@ -926,14 +926,14 @@
 		B21AEA40BB67F035813A8C4DEE69AA9F /* WXSwitchComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXSwitchComponent.m; path = ios/sdk/WeexSDK/Sources/Component/WXSwitchComponent.m; sourceTree = "<group>"; };
 		B26EFA228E560EF1A5DE102EFACD3254 /* WXSimulatorShortcutManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXSimulatorShortcutManager.m; path = ios/sdk/WeexSDK/Sources/Utility/WXSimulatorShortcutManager.m; sourceTree = "<group>"; };
 		B27CB794A72EA1F2246FE4925EBC3E33 /* WXServiceFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXServiceFactory.h; path = ios/sdk/WeexSDK/Sources/Manager/WXServiceFactory.h; sourceTree = "<group>"; };
-		B2D2854DE8951F7EF60F4487E46FFA0B /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D2854DE8951F7EF60F4487E46FFA0B /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDWebImage.a; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B335F9BC3604EA78448E0FCF726FC91F /* WXComponentFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXComponentFactory.h; path = ios/sdk/WeexSDK/Sources/Manager/WXComponentFactory.h; sourceTree = "<group>"; };
 		B35FD6B2BF8B0F474CD7E6FF9E055E4E /* WXConfigCenterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXConfigCenterProtocol.h; path = ios/sdk/WeexSDK/Sources/Protocol/WXConfigCenterProtocol.h; sourceTree = "<group>"; };
 		B43D61E139838AEFA1509CF4FF2F95C2 /* WXNavigationDefaultImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXNavigationDefaultImpl.m; path = ios/sdk/WeexSDK/Sources/Handler/WXNavigationDefaultImpl.m; sourceTree = "<group>"; };
 		B52AC17EC53B84F1824A36FC0C3EE346 /* MPSequenceGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPSequenceGenerator.m; path = Sugo/MPSequenceGenerator.m; sourceTree = "<group>"; };
 		B6349EE8E41DC54A050029C0C1C43D09 /* Pods-WeexUITestDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeexUITestDemo-dummy.m"; sourceTree = "<group>"; };
 		B71CC53C992413E64C44DBDC006A85F9 /* MPCGPointToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPCGPointToNSDictionaryValueTransformer.m; path = Sugo/MPCGPointToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
-		B79791BF78643CE4FC2302ACA81285B9 /* WebViewReport.WK.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = WebViewReport.WK.js; path = Sugo/WebViewReport.WK.js; sourceTree = "<group>"; };
+		B79791BF78643CE4FC2302ACA81285B9 /* WebViewReport.WK.js */ = {isa = PBXFileReference; includeInIndex = 1; name = WebViewReport.WK.js; path = Sugo/WebViewReport.WK.js; sourceTree = "<group>"; };
 		B7A0A2FD9F0B3B5B3808B76C927E71B5 /* SugoURLs.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = SugoURLs.plist; path = Sugo/SugoURLs.plist; sourceTree = "<group>"; };
 		B8481C5A21BF3BFAD0937C2EC879B594 /* MPObjectIdentityProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPObjectIdentityProvider.h; path = Sugo/MPObjectIdentityProvider.h; sourceTree = "<group>"; };
 		B8E729D735394CFE01470DF59533B663 /* MPObjectSerializerContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPObjectSerializerContext.h; path = Sugo/MPObjectSerializerContext.h; sourceTree = "<group>"; };
@@ -967,7 +967,7 @@
 		CAA5C4000BFFF932E78EEBA8DF7DA214 /* WXVoiceOverModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXVoiceOverModule.m; path = ios/sdk/WeexSDK/Sources/Module/WXVoiceOverModule.m; sourceTree = "<group>"; };
 		CC5861679257165B307790E3A5088CED /* WXLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXLog.h; path = ios/sdk/WeexSDK/Sources/Utility/WXLog.h; sourceTree = "<group>"; };
 		CD4CF9732191B8B9DF68CE27FDDE85FD /* WXModalUIModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXModalUIModule.m; path = ios/sdk/WeexSDK/Sources/Module/WXModalUIModule.m; sourceTree = "<group>"; };
-		CD70A64C64A5784D8E97256C0A3ED1EE /* WebViewBindings.WK.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = WebViewBindings.WK.js; path = Sugo/WebViewBindings.WK.js; sourceTree = "<group>"; };
+		CD70A64C64A5784D8E97256C0A3ED1EE /* WebViewBindings.WK.js */ = {isa = PBXFileReference; includeInIndex = 1; name = WebViewBindings.WK.js; path = Sugo/WebViewBindings.WK.js; sourceTree = "<group>"; };
 		CE3FD36091DD692D956F885FCEE6BA50 /* WXPolyfillSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXPolyfillSet.h; path = ios/sdk/WeexSDK/Sources/Bridge/WXPolyfillSet.h; sourceTree = "<group>"; };
 		CE47CDA7AEE4E21FC0DD7CC55391E59F /* MPObjectSerializerConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPObjectSerializerConfig.m; path = Sugo/MPObjectSerializerConfig.m; sourceTree = "<group>"; };
 		CE8FAEE11D7D3A5ECAD4D7814DB8455F /* WXImageComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXImageComponent.m; path = ios/sdk/WeexSDK/Sources/Component/WXImageComponent.m; sourceTree = "<group>"; };
@@ -1009,7 +1009,7 @@
 		DD0A242AED4B49B0F3DA9CD64C805AC2 /* WXRecyclerDataController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXRecyclerDataController.h; path = ios/sdk/WeexSDK/Sources/Component/Recycler/WXRecyclerDataController.h; sourceTree = "<group>"; };
 		DD3CA571074634BF9742021E02C776B8 /* MPABTestDesignerClearRequestMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPABTestDesignerClearRequestMessage.h; path = Sugo/MPABTestDesignerClearRequestMessage.h; sourceTree = "<group>"; };
 		DDB87556022FBECF13A6A6186C1CCD14 /* WXNavigationDefaultImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXNavigationDefaultImpl.h; path = ios/sdk/WeexSDK/Sources/Handler/WXNavigationDefaultImpl.h; sourceTree = "<group>"; };
-		DDFF7E7D968ECF3F4154C5508DC91C2E /* Layout.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = Layout.c; path = ios/sdk/WeexSDK/Sources/Layout/Layout.c; sourceTree = "<group>"; };
+		DDFF7E7D968ECF3F4154C5508DC91C2E /* Layout.c */ = {isa = PBXFileReference; includeInIndex = 1; name = Layout.c; path = ios/sdk/WeexSDK/Sources/Layout/Layout.c; sourceTree = "<group>"; };
 		DE84D263855C2D57339C6D4BF9C73D0B /* SugoPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SugoPrivate.h; path = Sugo/SugoPrivate.h; sourceTree = "<group>"; };
 		DEF34A53506494E606402D6129DE7F58 /* WXRecyclerUpdateController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXRecyclerUpdateController.m; path = ios/sdk/WeexSDK/Sources/Component/Recycler/WXRecyclerUpdateController.m; sourceTree = "<group>"; };
 		DF830A90398E3B847443E8B7572A3E08 /* Pods-WeexUITestDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeexUITestDemo-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -1017,7 +1017,7 @@
 		E0974D58C0C3DBF2E9B9B622296B029D /* Pods-WeexDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeexDemo-frameworks.sh"; sourceTree = "<group>"; };
 		E0A74F66E6530B22FE2258BA51A44303 /* WXResourceRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXResourceRequest.m; path = ios/sdk/WeexSDK/Sources/Network/WXResourceRequest.m; sourceTree = "<group>"; };
 		E11141F182E1C6654AF3D43BDB97DA3E /* WXVideoComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXVideoComponent.m; path = ios/sdk/WeexSDK/Sources/Component/WXVideoComponent.m; sourceTree = "<group>"; };
-		E111A6E3583447989332E69151C1645F /* WebViewExcute.Report.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = WebViewExcute.Report.js; path = Sugo/WebViewExcute.Report.js; sourceTree = "<group>"; };
+		E111A6E3583447989332E69151C1645F /* WebViewExcute.Report.js */ = {isa = PBXFileReference; includeInIndex = 1; name = WebViewExcute.Report.js; path = Sugo/WebViewExcute.Report.js; sourceTree = "<group>"; };
 		E1F074E00344BAA81461CC474491EE54 /* UIViewController+SugoHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+SugoHelpers.h"; path = "Sugo/UIViewController+SugoHelpers.h"; sourceTree = "<group>"; };
 		E2B0E84B8FEF4AD9704B22EB2FA0AD54 /* UIApplication+AutomaticEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+AutomaticEvents.m"; path = "Sugo/UIApplication+AutomaticEvents.m"; sourceTree = "<group>"; };
 		E371DFC0ECD9DAE075B0303BD99C0E67 /* MPPropertyDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPPropertyDescription.m; path = Sugo/MPPropertyDescription.m; sourceTree = "<group>"; };
@@ -1035,7 +1035,7 @@
 		E92A26380DB8E5C358F78CE626328729 /* WXJSCoreBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXJSCoreBridge.m; path = ios/sdk/WeexSDK/Sources/Bridge/WXJSCoreBridge.m; sourceTree = "<group>"; };
 		E94DF1930414152DA64577B968868DB1 /* Layout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Layout.h; path = ios/sdk/WeexSDK/Sources/Layout/Layout.h; sourceTree = "<group>"; };
 		E9CCA7088EC341393523B379BB4CF92A /* WXComponent+Navigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WXComponent+Navigation.h"; path = "ios/sdk/WeexSDK/Sources/Model/WXComponent+Navigation.h"; sourceTree = "<group>"; };
-		EA5126C04E5D0CD5301B677EAD466649 /* WebViewExcute.Sugo.WK.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = WebViewExcute.Sugo.WK.js; path = Sugo/WebViewExcute.Sugo.WK.js; sourceTree = "<group>"; };
+		EA5126C04E5D0CD5301B677EAD466649 /* WebViewExcute.Sugo.WK.js */ = {isa = PBXFileReference; includeInIndex = 1; name = WebViewExcute.Sugo.WK.js; path = Sugo/WebViewExcute.Sugo.WK.js; sourceTree = "<group>"; };
 		EA6AB6C55E0E06722C2CE1CB979146E6 /* MPObjectSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPObjectSelector.m; path = Sugo/MPObjectSelector.m; sourceTree = "<group>"; };
 		EAA8801F4656B94E2697F1BD970ABEC0 /* WXSliderNeighborComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXSliderNeighborComponent.h; path = ios/sdk/WeexSDK/Sources/Component/WXSliderNeighborComponent.h; sourceTree = "<group>"; };
 		EAEB06F31F111FA1E44DE6DA64BFC5AD /* UIViewController+AutomaticEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AutomaticEvents.h"; path = "Sugo/UIViewController+AutomaticEvents.h"; sourceTree = "<group>"; };
@@ -1082,7 +1082,7 @@
 		FD816E3EC9EEF02BAEF2064950E45347 /* WXURLRewriteDefaultImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXURLRewriteDefaultImpl.m; path = ios/sdk/WeexSDK/Sources/Handler/WXURLRewriteDefaultImpl.m; sourceTree = "<group>"; };
 		FDC59F52852FDCC603688C8CB517CFE1 /* WXRootView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXRootView.h; path = ios/sdk/WeexSDK/Sources/View/WXRootView.h; sourceTree = "<group>"; };
 		FE3EE1424F1C47258D5B1C1D682D0967 /* Pods-WeexUITestDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeexUITestDemo-frameworks.sh"; sourceTree = "<group>"; };
-		FE6E5E914068305FDB4CEE5BF3118098 /* WebViewReport.UI.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = WebViewReport.UI.js; path = Sugo/WebViewReport.UI.js; sourceTree = "<group>"; };
+		FE6E5E914068305FDB4CEE5BF3118098 /* WebViewReport.UI.js */ = {isa = PBXFileReference; includeInIndex = 1; name = WebViewReport.UI.js; path = Sugo/WebViewReport.UI.js; sourceTree = "<group>"; };
 		FF1AFC2E4FE863A65DE4F837B24DDDA6 /* MPUIEdgeInsetsToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPUIEdgeInsetsToNSDictionaryValueTransformer.m; path = Sugo/MPUIEdgeInsetsToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
 		FF4A172DC41A5A00C2E9C6F2764F5AD2 /* UIViewController+SugoHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+SugoHelpers.m"; path = "Sugo/UIViewController+SugoHelpers.m"; sourceTree = "<group>"; };
 		FF80A7F16E2CBFA9ED616246B98EB03D /* WXBridgeContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXBridgeContext.m; path = ios/sdk/WeexSDK/Sources/Bridge/WXBridgeContext.m; sourceTree = "<group>"; };
@@ -1276,6 +1276,7 @@
 				2FC76705361B28BD06BBC61FCB475C54 /* Support Files */,
 				2C7F4D1F3A31B6B356246A8FFC704B8B /* weex */,
 			);
+			name = "sugo-objc-sdk";
 			path = "sugo-objc-sdk";
 			sourceTree = "<group>";
 		};
@@ -1285,6 +1286,7 @@
 				58498EAB49BE4945AA1FEE29F06A6F3C /* Core */,
 				1DDCAD4491F31F96876B8910030F5192 /* Support Files */,
 			);
+			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -1501,6 +1503,7 @@
 				3EEEC23A5B323045CA8792530264957F /* SRWebSocket.m */,
 				37E2723EDC48A9D177AC70F7B67EA33E /* Support Files */,
 			);
+			name = SocketRocket;
 			path = SocketRocket;
 			sourceTree = "<group>";
 		};
@@ -1550,6 +1553,7 @@
 			children = (
 				12F284E908DCD7FC5CD66F2B8402EB1E /* Frameworks */,
 			);
+			name = WeexPluginLoader;
 			path = WeexPluginLoader;
 			sourceTree = "<group>";
 		};
@@ -1847,6 +1851,7 @@
 				9B02370FC6B4AEAC6B3EC83AF37B9CB5 /* Resources */,
 				63525199998D336A799A0D1BFCE8F4E1 /* Support Files */,
 			);
+			name = WeexSDK;
 			path = WeexSDK;
 			sourceTree = "<group>";
 		};
@@ -2261,7 +2266,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2683,7 +2688,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2787,7 +2792,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2809,7 +2814,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2885,7 +2890,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
