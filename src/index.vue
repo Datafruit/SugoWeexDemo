@@ -8,8 +8,10 @@
 </template>
 
 <script>
+
   var navigator = weex.requireModule('navigator')
   var modal = weex.requireModule('modal')
+
   export default {
     data () {
       return {
@@ -18,22 +20,37 @@
     },
     methods:{
       listClicked (event) {
+        var url = this.$getConfig().bundleUrl;
+        url = url.split('/').slice(0,-1).join('/') + '/list.js';
         navigator.push({
-          url: 'http://dotwe.org/raw/dist/ad2b60837c38d4f0b23670a0d5a2ace5.bundle.wx',
+          url: url,
           animated: "true"
         }, event => {
-          modal.toast({ message: 'callback: ' + event })
+          // modal.toast({ message: 'callback: ' + event })
+          console.log(event)
         })
       },
       scrollerClicked (event) {
+        var url = this.$getConfig().bundleUrl;
+        url = url.split('/').slice(0,-1).join('/') + '/scroller.js';
         navigator.push({
-          url: 'http://dotwe.org/raw/dist/ad2b60837c38d4f0b23670a0d5a2ace5.bundle.wx',
+          url: url,
           animated: "true"
         }, event => {
-          modal.toast({ message: 'callback: ' + event })
+          // modal.toast({ message: 'callback: ' + event })
+          console.log(event)
         })
       },
       recyclelistClicked (event) {
+        var url = this.$getConfig().bundleUrl;
+        url = url.split('/').slice(0,-1).join('/') + '/recycle_list.js';
+        navigator.push({
+          url: url,
+          animated: "true"
+        }, event => {
+          // modal.toast({ message: 'callback: ' + event })
+          console.log(event)
+        })
       }
     }
   }

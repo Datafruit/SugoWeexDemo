@@ -183,4 +183,5 @@ const weexConfig = {
   node: config.nodeConfiguration
 };
 
-module.exports = [webConfig, weexConfig];
+// module.exports = [webConfig, weexConfig];
+module.exports = [weexConfig];

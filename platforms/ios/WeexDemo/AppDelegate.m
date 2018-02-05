@@ -11,6 +11,8 @@
 #import <WeexSDK/WeexSDK.h>
 #import <AVFoundation/AVFoundation.h>
 #import "WeexSDKManager.h"
+#import "Sugo.h"
+#import "Sugo+Weex.h"
 
 @interface AppDelegate ()
 @end
@@ -25,6 +27,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
+    [self initSugo];
+    
     [WeexSDKManager setup];
     
     [self.window makeKeyAndVisible];
@@ -33,6 +37,25 @@
     [self startSplashScreen];
     
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return [[Sugo sharedInstance] handleURL:url];
+}
+
+#pragma Sugo
+- (void)initSugo {
+    NSString *projectID = @"com_H1bIzqK2SZ_project_r1HAty5zM"; // 项目ID
+    NSString *appToken = @"1a9f8bed75f2df2489dd272e03a92596"; // 应用Token
+    SugoBindingsURL = @"http://58.63.110.97:2270"; // 设置获取绑定事件配置的URL，端口默认为8000
+    SugoCollectionURL = @"http://58.63.110.97:2271"; // 设置传输绑定事件的网管URL，端口默认为80
+    SugoCodelessURL = @"ws://58.63.110.97:2227"; // 设置连接可视化埋点的URL，端口默认为8887
+    [Sugo sharedInstanceWithID:projectID token:appToken launchOptions:nil];
+    [[Sugo sharedInstance] setEnableLogging:YES]; // 如果需要查看SDK的Log，请设置为true
+    [[Sugo sharedInstance] setFlushInterval:5]; // 被绑定的事件数据往服务端上传的事件间隔，单位是秒，如若不设置，默认时间是60秒
+    [[Sugo sharedInstance] setCacheInterval:60]; // 从服务端拉取绑定事件配置的时间间隔，单位是秒，如若不设置，默认时间是1小时
+    [[Sugo sharedInstance] registerModule];        // 需要支持Weex可视化埋点时调用
 }
 
 #pragma mark 

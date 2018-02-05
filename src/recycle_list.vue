@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <recycle-list class="list" :list-data="longList" alias="item" template-key="type" append="tree">
       <cell-slot template-type="tab" class="tab-cell row">
@@ -465,3 +465,4 @@
     margin-bottom: 20px;
   }
 </style>
+ -->

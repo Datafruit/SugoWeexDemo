@@ -62,25 +62,16 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/******/ ({
+
+/***/ 8:
+/***/ (function(module, exports) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(1)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(2)
-
-/* template */
-var __vue_template__ = __webpack_require__(3)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -92,10 +83,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lzackx/Work/Repositories/SugoWeexDemo/src/index.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-46d3a3f9"
+__vue_options__.__file = "/Users/lzackx/Work/Repositories/SugoWeexDemo/src/recycle_list.vue"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -113,124 +101,6 @@ module.exports.el = 'true'
 new Vue(module.exports)
 
 
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-module.exports = {
-  "wrapper": {
-    "justifyContent": "center",
-    "alignItems": "center"
-  },
-  "logo": {
-    "width": "424",
-    "height": "200"
-  },
-  "Component": {
-    "marginTop": "70",
-    "fontSize": "50",
-    "color": "#41B883"
-  }
-}
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-var navigator = weex.requireModule('navigator');
-var modal = weex.requireModule('modal');
-
-exports.default = {
-  data: function data() {
-    return {
-      logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
-    };
-  },
-
-  methods: {
-    listClicked: function listClicked(event) {
-      var url = this.$getConfig().bundleUrl;
-      url = url.split('/').slice(0, -1).join('/') + '/list.js';
-      navigator.push({
-        url: url,
-        animated: "true"
-      }, function (event) {
-        // modal.toast({ message: 'callback: ' + event })
-        console.log(event);
-      });
-    },
-    scrollerClicked: function scrollerClicked(event) {
-      var url = this.$getConfig().bundleUrl;
-      url = url.split('/').slice(0, -1).join('/') + '/scroller.js';
-      navigator.push({
-        url: url,
-        animated: "true"
-      }, function (event) {
-        // modal.toast({ message: 'callback: ' + event })
-        console.log(event);
-      });
-    },
-    recyclelistClicked: function recyclelistClicked(event) {
-      var url = this.$getConfig().bundleUrl;
-      url = url.split('/').slice(0, -1).join('/') + '/recycle_list.js';
-      navigator.push({
-        url: url,
-        animated: "true"
-      }, function (event) {
-        // modal.toast({ message: 'callback: ' + event })
-        console.log(event);
-      });
-    }
-  }
-};
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["wrapper"]
-  }, [_c('image', {
-    staticClass: ["logo"],
-    attrs: {
-      "src": _vm.logo
-    }
-  }), _c('text', {
-    staticClass: ["Component"],
-    on: {
-      "click": _vm.listClicked
-    }
-  }, [_vm._v("list")]), _c('text', {
-    staticClass: ["Component"],
-    on: {
-      "click": _vm.scrollerClicked
-    }
-  }, [_vm._v("scroller")]), _c('text', {
-    staticClass: ["Component"],
-    on: {
-      "click": _vm.recyclelistClicked
-    }
-  }, [_vm._v("recycle_list")])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-
 /***/ })
-/******/ ]);
+
+/******/ });

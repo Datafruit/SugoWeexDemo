@@ -1,68 +1,68 @@
 <template>
-  <scroller class="scrollor">
+  <scroller class="scrollor" @click='clicked'>
     <template v-for="(item, index) in longList">
-      <div class="tab-cell row" append="tree" v-if="item.type === 'tab'" :key="index">
-        <div class="tab" v-for="(tab, t) in item.tabs" :key="t">
-          <image class="tab-icon" :src="tab.icon"></image>
-          <text class="tab-title">{{tab.title}}</text>
+      <div class="tab-cell row" append="tree" v-if="item.type === 'tab'" :key="index" @click='clicked'>
+        <div class="tab" v-for="(tab, t) in item.tabs" :key="t" @click='clicked'>
+          <image class="tab-icon" :src="tab.icon" @click='clicked'></image>
+          <text class="tab-title" @click='clicked'>{{tab.title}}</text>
         </div>
       </div>
-      <div class="banner-cell" append="tree" v-if="item.type === 'banner'" :key="index">
-        <image class="banner-image" :src="item.src"></image>
+      <div class="banner-cell" append="tree" v-if="item.type === 'banner'" :key="index" @click='clicked'>
+        <image class="banner-image" :src="item.src" @click='clicked'></image>
       </div>
-      <div class="app-cell row" append="tree" v-if="item.type === 'apps'" :key="index">
-        <div class="app-box"  v-for="(app, a) in item.apps" :key="a">
-          <image class="app-icon" :src="app.icon"></image>
-          <text class="app-title">{{app.title}}</text>
+      <div class="app-cell row" append="tree" v-if="item.type === 'apps'" :key="index" @click='clicked'>
+        <div class="app-box"  v-for="(app, a) in item.apps" :key="a" @click='clicked'>
+          <image class="app-icon" :src="app.icon" @click='clicked'></image>
+          <text class="app-title" @click='clicked'>{{app.title}}</text>
         </div>
       </div>
-      <div class="card-cell" append="tree" v-if="item.type === 'card'" :key="index">
-        <div class="card">
-          <div style="height:60px;padding-left:30">
-            <image class="card-banner" src="//img.alicdn.com/tfs/TB1moeURFXXXXasXXXXXXXXXXXX-390-105.png"></image>
+      <div class="card-cell" append="tree" v-if="item.type === 'card'" :key="index" @click='clicked'>
+        <div class="card" @click='clicked'>
+          <div style="height:60px;padding-left:30" @click='clicked'>
+            <image class="card-banner" src="//img.alicdn.com/tfs/TB1moeURFXXXXasXXXXXXXXXXXX-390-105.png" @click='clicked'></image>
           </div>
-          <div class="row" style="padding-bottom:18px">
-            <div class="card-side">
-              <image class="card-poster" :src="item.poster"></image>
+          <div class="row" style="padding-bottom:18px" @click='clicked'>
+            <div class="card-side" @click='clicked'>
+              <image class="card-poster" :src="item.poster" @click='clicked'></image>
             </div>
-            <div class="card-message">
-              <text class="card-title">{{item.title}}</text>
-              <div class="card-line row">
-                <image class="card-icon" src="//ossgw.alicdn.com/img/upload/0a4946e164acd1f81e97ddbc048afcc5/Group13-69-69.png@22w_22h_80Q.png"></image>
-                <text class="card-subtitle">{{item.subtitle1}}</text>
+            <div class="card-message" @click='clicked'>
+              <text class="card-title" @click='clicked'>{{item.title}}</text>
+              <div class="card-line row" @click='clicked'>
+                <image class="card-icon" src="//ossgw.alicdn.com/img/upload/0a4946e164acd1f81e97ddbc048afcc5/Group13-69-69.png@22w_22h_80Q.png" @click='clicked'></image>
+                <text class="card-subtitle" @click='clicked'>{{item.subtitle1}}</text>
               </div>
-              <div class="card-line row">
-                <image class="card-icon" src="//ossgw.alicdn.com/img/upload/0a4946e164acd1f81e97ddbc048afcc5/Group13-69-69.png@22w_22h_80Q.png"></image>
-                <text class="card-subtitle">{{item.subtitle2}}</text>
+              <div class="card-line row" @click='clicked'>
+                <image class="card-icon" src="//ossgw.alicdn.com/img/upload/0a4946e164acd1f81e97ddbc048afcc5/Group13-69-69.png@22w_22h_80Q.png" @click='clicked'></image>
+                <text class="card-subtitle" @click='clicked'>{{item.subtitle2}}</text>
               </div>
-              <div class="card-progress row">
-                <div class="card-progress-inner" :style="{ width: item.progress * 230 / 100 }"></div>
-                <text class="card-got">已抢 {{item.got}} 件</text>
-                <text class="card-remain">{{item.progress}} %</text>
+              <div class="card-progress row" @click='clicked'>
+                <div class="card-progress-inner" :style="{ width: item.progress * 230 / 100 }" @click='clicked'></div>
+                <text class="card-got" @click='clicked'>已抢 {{item.got}} 件</text>
+                <text class="card-remain" @click='clicked'>{{item.progress}} %</text>
               </div>
-              <div class="card-info row">
-                <text class="card-price">¥ {{item.price.real}}</text>
-                <text class="card-sale-price">¥ {{item.price.sale}}</text>
-                <div class="card-btn">
-                  <text class="card-btn-text">马上抢</text>
+              <div class="card-info row" @click='clicked'>
+                <text class="card-price" @click='clicked'>¥ {{item.price.real}}</text>
+                <text class="card-sale-price" @click='clicked'>¥ {{item.price.sale}}</text>
+                <div class="card-btn" @click='clicked'>
+                  <text class="card-btn-text" @click='clicked'>马上抢</text>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="floor-cell" append="tree" v-if="item.type === 'floor'" :key="index">
-        <div class="floor">
-          <text class="floor-title">{{item.title}}</text>
-          <text class="floor-desc" lines="2">{{item.desc}}</text>
-          <div class="floor-image-box row">
-            <image class="floor-image" :src="source" v-for="(source, x) in item.pictures" :key="x" />
+      <div class="floor-cell" append="tree" v-if="item.type === 'floor'" :key="index" @click='clicked'>
+        <div class="floor" @click='clicked'>
+          <text class="floor-title" @click='clicked'>{{item.title}}</text>
+          <text class="floor-desc" lines="2" @click='clicked'>{{item.desc}}</text>
+          <div class="floor-image-box row" @click='clicked'>
+            <image class="floor-image" @click='clicked' :src="source" v-for="(source, x) in item.pictures" :key="x" />
           </div>
-          <text class="floor-comment" v-if="item.count">{{item.count}} 人说好</text>
+          <text class="floor-comment" @click='clicked' v-if="item.count">{{item.count}} 人说好</text>
         </div>
       </div>
-      <div class="chat-cell" append="tree" v-if="item.type === 'chat'" :key="index">
-        <text class="banner-title">chat</text>
+      <div class="chat-cell" append="tree" v-if="item.type === 'chat'" :key="index" @click='clicked'>
+        <text class="banner-title" @click='clicked'>chat</text>
       </div>
     </template>
   </scroller>
@@ -271,6 +271,11 @@
         + ',tab,apps,banner,card,card,apps,floor,floor,floor'
       return {
         longList: createListData(order)
+      }
+    },
+    methods:{
+      clicked () {
+        // modal.toast({ message: 'clicked'})
       }
     }
   }
