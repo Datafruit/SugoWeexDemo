@@ -19,6 +19,7 @@
     },
     methods:{
       listClicked (event) {
+        console.log("click list")
         var url = this.$getConfig().bundleUrl;
         url = url.split('/').slice(0,-1).join('/') + '/list.js';
         navigator.push({
@@ -30,6 +31,7 @@
         })
       },
       scrollerClicked (event) {
+        console.log("click scroller")
         var url = this.$getConfig().bundleUrl;
         url = url.split('/').slice(0,-1).join('/') + '/scroller.js';
         navigator.push({

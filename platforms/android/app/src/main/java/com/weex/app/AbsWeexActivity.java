@@ -234,8 +234,8 @@ public abstract class AbsWeexActivity extends AppCompatActivity implements IWXRe
   private static final String TAG = "AbsWeexActivity";
   protected BroadcastReceiver mBroadcastReceiver;
   protected ViewGroup mContainer;
-  protected WXSDKInstance mInstance;
-  protected Uri mUri;
+  protected WXSDKInstance mWXSDKInstance;
+  protected Uri mBundleJsUri;
   private WxReloadListener mReloadListener;
   private WxRefreshListener mRefreshListener;
   private String mUrl;// "http://your_current_IP:12580/examples/build/index.js";
@@ -246,7 +246,7 @@ public abstract class AbsWeexActivity extends AppCompatActivity implements IWXRe
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     createWeexInstance();
-    mInstance.onActivityCreate();
+    mWXSDKInstance.onActivityCreate();
     registerBroadcastReceiver(mBroadcastReceiver, null);
   }
 
@@ -259,17 +259,17 @@ public abstract class AbsWeexActivity extends AppCompatActivity implements IWXRe
   }
 
   protected void destoryWeexInstance() {
-    if (mInstance != null) {
-      mInstance.registerRenderListener(null);
-      mInstance.destroy();
-      mInstance = null;
+    if (mWXSDKInstance != null) {
+      mWXSDKInstance.registerRenderListener(null);
+      mWXSDKInstance.destroy();
+      mWXSDKInstance = null;
     }
   }
 
   protected void createWeexInstance() {
     destoryWeexInstance();
-    mInstance = new WXSDKInstance(this);
-    mInstance.registerRenderListener(this);
+    mWXSDKInstance = new WXSDKInstance(this);
+    mWXSDKInstance.registerRenderListener(this);
   }
 
   protected void renderPageByURL(String url) {
@@ -280,7 +280,7 @@ public abstract class AbsWeexActivity extends AppCompatActivity implements IWXRe
     CommonUtils.throwIfNull(mContainer, new RuntimeException("Can't render page, container is null"));
     Map<String, Object> options = new HashMap<>();
     options.put(WXSDKInstance.BUNDLE_URL, url);
-    mInstance.renderByUrl(
+    mWXSDKInstance.renderByUrl(
         getPageName(),
         url,
         options,
@@ -297,47 +297,47 @@ public abstract class AbsWeexActivity extends AppCompatActivity implements IWXRe
   @Override
   public void onStart() {
     super.onStart();
-    if (mInstance != null) {
-      mInstance.onActivityStart();
+    if (mWXSDKInstance != null) {
+      mWXSDKInstance.onActivityStart();
     }
   }
 
   @Override
   public void onResume() {
     super.onResume();
-    if (mInstance != null) {
-      mInstance.onActivityResume();
+    if (mWXSDKInstance != null) {
+      mWXSDKInstance.onActivityResume();
     }
   }
 
   @Override
   public void onPause() {
     super.onPause();
-    if (mInstance != null) {
-      mInstance.onActivityPause();
+    if (mWXSDKInstance != null) {
+      mWXSDKInstance.onActivityPause();
     }
   }
 
   @Override
   public void onStop() {
     super.onStop();
-    if (mInstance != null) {
-      mInstance.onActivityStop();
+    if (mWXSDKInstance != null) {
+      mWXSDKInstance.onActivityStop();
     }
   }
 
   @Override
   public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-    if (mInstance != null) {
-      mInstance.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    if (mWXSDKInstance != null) {
+      mWXSDKInstance.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
     super.onRequestPermissionsResult(requestCode, permissions, grantResults);
   }
 
   @Override
   public void onActivityResult(int requestCode, int resultCode, Intent data) {
-    if (mInstance != null) {
-      mInstance.onActivityResult(requestCode, resultCode, data);
+    if (mWXSDKInstance != null) {
+      mWXSDKInstance.onActivityResult(requestCode, resultCode, data);
     }
     super.onActivityResult(requestCode, resultCode, data);
   }
@@ -345,8 +345,8 @@ public abstract class AbsWeexActivity extends AppCompatActivity implements IWXRe
   @Override
   public void onDestroy() {
     super.onDestroy();
-    if (mInstance != null) {
-      mInstance.onActivityDestroy();
+    if (mWXSDKInstance != null) {
+      mWXSDKInstance.onActivityDestroy();
     }
     unregisterBroadcastReceiver();
 
@@ -470,9 +470,9 @@ public abstract class AbsWeexActivity extends AppCompatActivity implements IWXRe
 
   protected boolean isLocalPage() {
     boolean isLocalPage = true;
-    if (mUri != null) {
-      String scheme = mUri.getScheme();
-      isLocalPage = !mUri.isHierarchical() ||
+    if (mBundleJsUri != null) {
+      String scheme = mBundleJsUri.getScheme();
+      isLocalPage = !mBundleJsUri.isHierarchical() ||
           (!TextUtils.equals(scheme, "http") && !TextUtils.equals(scheme, "https"));
     }
     return isLocalPage;
