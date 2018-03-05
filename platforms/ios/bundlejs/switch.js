@@ -62,16 +62,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 8:
-/***/ (function(module, exports) {
+/***/ 20:
+/***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(21)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(22)
+
+/* template */
+var __vue_template__ = __webpack_require__(23)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -83,7 +93,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/lzackx/Work/Repositories/SugoWeexDemo/src/recycle_list.vue"
+__vue_options__.__file = "/Users/lzackx/Work/Repositories/SugoWeexDemo/src/switch.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-5505601d"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -100,6 +113,135 @@ module.exports = __vue_exports__
 module.exports.el = 'true'
 new Vue(module.exports)
 
+
+/***/ }),
+
+/***/ 21:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "example": {
+    "flexDirection": "row",
+    "justifyContent": "flex-start",
+    "marginTop": "60"
+  },
+  "label": {
+    "fontSize": "40",
+    "lineHeight": "60",
+    "width": "350",
+    "color": "#666666",
+    "textAlign": "right",
+    "marginRight": "20"
+  },
+  "info": {
+    "fontSize": "30",
+    "lineHeight": "60",
+    "color": "#bbbbbb",
+    "marginLeft": "10"
+  }
+}
+
+/***/ }),
+
+/***/ 22:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+  data: function data() {
+    return {
+      checked: false
+    };
+  },
+
+  methods: {
+    onclick: function onclick() {
+      console.log("switch onclick");
+    },
+    onchange: function onchange(event) {
+      console.log("switch onchange, value: " + event.value);
+      this.checked = event.value;
+    }
+  }
+};
+
+/***/ }),
+
+/***/ 23:
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_vm._m(0), _c('div', {
+    staticClass: ["example"]
+  }, [_c('text', {
+    staticClass: ["label"]
+  }, [_vm._v("onclick")]), _c('switch', {
+    on: {
+      "click": _vm.onclick
+    }
+  })]), _vm._m(1), _c('div', {
+    staticClass: ["example"]
+  }, [_c('text', {
+    staticClass: ["label"]
+  }, [_vm._v("onchange")]), _c('switch', {
+    on: {
+      "change": _vm.onchange
+    }
+  }), _c('text', {
+    staticClass: ["info"]
+  }, [_vm._v(_vm._s(_vm.checked))])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["example"]
+  }, [_c('text', {
+    staticClass: ["label"]
+  }, [_vm._v("normal")]), _c('switch')])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["example"]
+  }, [_c('text', {
+    staticClass: ["label"]
+  }, [_vm._v("disabled")]), _c('switch', {
+    attrs: {
+      "disabled": "true",
+      "checked": "true"
+    }
+  }), _c('switch', {
+    attrs: {
+      "disabled": "true"
+    }
+  })])
+}]}
+module.exports.render._withStripped = true
 
 /***/ })
 

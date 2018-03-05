@@ -62,25 +62,29 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */
+/* 0 */,
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(1)
+__vue_styles__.push(__webpack_require__(5)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(2)
+__vue_exports__ = __webpack_require__(6)
 
 /* template */
-var __vue_template__ = __webpack_require__(3)
+var __vue_template__ = __webpack_require__(7)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -114,27 +118,42 @@ new Vue(module.exports)
 
 
 /***/ }),
-/* 1 */
+/* 5 */
 /***/ (function(module, exports) {
 
 module.exports = {
   "wrapper": {
-    "justifyContent": "center",
+    "alignItems": "center"
+  },
+  "scroller": {
+    "width": "720",
+    "height": "1080",
     "alignItems": "center"
   },
   "logo": {
     "width": "424",
-    "height": "200"
+    "height": "200",
+    "marginTop": "24"
   },
-  "Component": {
-    "marginTop": "70",
-    "fontSize": "50",
-    "color": "#41B883"
+  "button": {
+    "width": "450",
+    "marginTop": "24",
+    "paddingTop": "24",
+    "paddingBottom": "24",
+    "borderWidth": "2",
+    "borderStyle": "solid",
+    "borderColor": "#dddddd",
+    "backgroundColor": "#f5f5f5"
+  },
+  "text": {
+    "fontSize": "48",
+    "color": "#666666",
+    "textAlign": "center"
   }
 }
 
 /***/ }),
-/* 2 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -151,22 +170,31 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-
-var navigator = weex.requireModule('navigator');
-var modal = weex.requireModule('modal');
+var navigator = weex.requireModule("navigator");
+var modal = weex.requireModule("modal");
 
 exports.default = {
   data: function data() {
     return {
-      logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
+      logo: "https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png"
     };
   },
 
   methods: {
     listClicked: function listClicked(event) {
+      console.log("click list");
       var url = this.$getConfig().bundleUrl;
-      url = url.split('/').slice(0, -1).join('/') + '/list.js';
+      url = url.split("/").slice(0, -1).join("/") + "/list.js";
       navigator.push({
         url: url,
         animated: "true"
@@ -176,8 +204,9 @@ exports.default = {
       });
     },
     scrollerClicked: function scrollerClicked(event) {
+      console.log("click scroller");
       var url = this.$getConfig().bundleUrl;
-      url = url.split('/').slice(0, -1).join('/') + '/scroller.js';
+      url = url.split("/").slice(0, -1).join("/") + "/scroller.js";
       navigator.push({
         url: url,
         animated: "true"
@@ -186,9 +215,86 @@ exports.default = {
         console.log(event);
       });
     },
+    webClicked: function webClicked(event) {
+      console.log("click web");
+      var url = this.$getConfig().bundleUrl;
+      url = url.split("/").slice(0, -1).join("/") + "/web.js";
+      navigator.push({
+        url: url,
+        animated: "true"
+      }, function (event) {
+        console.log(event);
+      });
+    },
+    textClicked: function textClicked(event) {
+      console.log("click text");
+      var url = this.$getConfig().bundleUrl;
+      url = url.split("/").slice(0, -1).join("/") + "/text.js";
+      navigator.push({
+        url: url,
+        animated: "true"
+      }, function (event) {
+        console.log(event);
+      });
+    },
+    imageClicked: function imageClicked(event) {
+      console.log("click image");
+      var url = this.$getConfig().bundleUrl;
+      url = url.split("/").slice(0, -1).join("/") + "/image.js";
+      navigator.push({
+        url: url,
+        animated: "true"
+      }, function (event) {
+        console.log(event);
+      });
+    },
+    sliderClicked: function sliderClicked(event) {
+      console.log("click slider");
+      var url = this.$getConfig().bundleUrl;
+      url = url.split("/").slice(0, -1).join("/") + "/slider.js";
+      navigator.push({
+        url: url,
+        animated: "true"
+      }, function (event) {
+        console.log(event);
+      });
+    },
+    switchClicked: function switchClicked(event) {
+      console.log("click switch");
+      var url = this.$getConfig().bundleUrl;
+      url = url.split("/").slice(0, -1).join("/") + "/switch.js";
+      navigator.push({
+        url: url,
+        animated: "true"
+      }, function (event) {
+        console.log(event);
+      });
+    },
+    textAreaClicked: function textAreaClicked(event) {
+      console.log("click textArea");
+      var url = this.$getConfig().bundleUrl;
+      url = url.split("/").slice(0, -1).join("/") + "/textarea.js";
+      navigator.push({
+        url: url,
+        animated: "true"
+      }, function (event) {
+        console.log(event);
+      });
+    },
+    videoClicked: function videoClicked(event) {
+      console.log("click video");
+      var url = this.$getConfig().bundleUrl;
+      url = url.split("/").slice(0, -1).join("/") + "/video.js";
+      navigator.push({
+        url: url,
+        animated: "true"
+      }, function (event) {
+        console.log(event);
+      });
+    },
     recyclelistClicked: function recyclelistClicked(event) {
       var url = this.$getConfig().bundleUrl;
-      url = url.split('/').slice(0, -1).join('/') + '/recycle_list.js';
+      url = url.split("/").slice(0, -1).join("/") + "/recycle_list.js";
       navigator.push({
         url: url,
         animated: "true"
@@ -201,28 +307,83 @@ exports.default = {
 };
 
 /***/ }),
-/* 3 */
+/* 7 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["wrapper"]
+  }, [_c('scroller', {
+    staticClass: ["scroller"]
   }, [_c('image', {
     staticClass: ["logo"],
     attrs: {
       "src": _vm.logo
     }
-  }), _c('text', {
-    staticClass: ["Component"],
-    on: {
-      "click": _vm.listClicked
-    }
-  }, [_vm._v("list")]), _c('text', {
-    staticClass: ["Component"],
+  }), _c('div', {
+    staticClass: ["button"],
     on: {
       "click": _vm.scrollerClicked
     }
-  }, [_vm._v("scroller")])])
+  }, [_c('text', {
+    staticClass: ["text"]
+  }, [_vm._v("综合")])]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.webClicked
+    }
+  }, [_c('text', {
+    staticClass: ["text"]
+  }, [_vm._v("web")])]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.listClicked
+    }
+  }, [_c('text', {
+    staticClass: ["text"]
+  }, [_vm._v("list")])]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.textClicked
+    }
+  }, [_c('text', {
+    staticClass: ["text"]
+  }, [_vm._v("text")])]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.imageClicked
+    }
+  }, [_c('text', {
+    staticClass: ["text"]
+  }, [_vm._v("image")])]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.sliderClicked
+    }
+  }, [_c('text', {
+    staticClass: ["text"]
+  }, [_vm._v("slider")])]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.switchClicked
+    }
+  }, [_c('text', {
+    staticClass: ["text"]
+  }, [_vm._v("switch")])]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.textAreaClicked
+    }
+  }, [_c('text', {
+    staticClass: ["text"]
+  }, [_vm._v("textarea")])]), _c('div', {
+    staticClass: ["button"],
+    on: {
+      "click": _vm.videoClicked
+    }
+  }, [_c('text', {
+    staticClass: ["text"]
+  }, [_vm._v("video")])])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
