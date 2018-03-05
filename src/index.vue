@@ -217,12 +217,9 @@ export default {
   align-items: center;
 }
 .scroller {
-  width: 700px;
-  height: 700px;
-  border-width: 3px;
-  border-style: solid;
-  border-color: rgb(162, 217, 192);
-  margin-left: 25px;
+  width: 720px;
+  height: 1080px;
+  align-items: center;
 }
 .logo {
   width: 424px;
