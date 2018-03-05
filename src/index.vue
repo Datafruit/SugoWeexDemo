@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <scroller>
+    <scroller class="scroller">
     <image :src="logo" class="logo"/>
     <div class="button" @click="scrollerClicked"><text  class="text">综合</text></div>
     <div class="button" @click="webClicked"><text  class="text">web</text></div>
@@ -70,7 +70,7 @@ export default {
       url =
         url
           .split("/")
-          .slice(0, -1) 
+          .slice(0, -1)
           .join("/") + "/web.js";
       navigator.push(
         {
@@ -215,6 +215,14 @@ export default {
 <style scoped>
 .wrapper {
   align-items: center;
+}
+.scroller {
+  width: 700px;
+  height: 700px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(162, 217, 192);
+  margin-left: 25px;
 }
 .logo {
   width: 424px;
