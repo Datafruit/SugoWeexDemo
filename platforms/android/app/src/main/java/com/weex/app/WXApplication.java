@@ -12,6 +12,7 @@ import com.taobao.weex.common.WXException;
 
 import io.sugo.android.metrics.SGConfig;
 import io.sugo.android.metrics.SugoAPI;
+import io.sugo.android.weex.WXSugoModule;
 
 public class WXApplication extends Application {
 
@@ -25,6 +26,7 @@ public class WXApplication extends Application {
     );
     try {
       WXSDKEngine.registerModule("event", WXEventModule.class);
+      WXSDKEngine.registerModule("sugo", WXSugoModule.class);
     } catch (WXException e) {
       e.printStackTrace();
     }

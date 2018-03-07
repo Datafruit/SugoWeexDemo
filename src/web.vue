@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <web ref="webview" style="width: 730px; height: 1000px" src="https://vuejs.org"
+    <web ref="webview" style="width: 720px; height: 720px" src="https://www.jd.com/"
       @pagestart="onPageStart" @pagefinish="onPageFinish" @error="onError" @receivedtitle="onReceivedTitle"></web>
     <div class="row" style="padding-top: 10px">
       <text class="button" :class="[canGoBack ? 'button-enabled' : 'button-disabled']" @click="goBack">←</text>
@@ -46,14 +46,24 @@
 </style>
 
 <script>
+var sugo = weex.requireModule("sugo");
+
 module.exports = {
   data: {
+    url: "",
     pagestart: "",
     pagefinish: "",
     title: "",
     error: "",
     canGoBack: false,
     canGoForward: false
+  },
+  mounted() {
+    if (weex.config.env.platform.toLowerCase() == "android") {
+      console.log("sugo.initWebView");
+      sugo.track("test", { aaa: "bbb" });
+      sugo.initWebView(this.$refs.webview);
+    }
   },
   methods: {
     goBack: function() {
@@ -72,7 +82,13 @@ module.exports = {
       this.pagestart = e.url;
     },
     onPageFinish: function(e) {
-      this.pagefinish = e.url;
+      if (weex.config.env.platform.toLowerCase() == "android") {
+        console.log("sugo.handleWebView");
+        sugo.handleWebView(e.url, this.$refs.webview);
+      }
+      if (e.url) {
+        this.pagefinish = e.url;
+      }
       this.canGoBack = e.canGoBack;
       this.canGoForward = e.canGoForward;
       if (e.title) {
