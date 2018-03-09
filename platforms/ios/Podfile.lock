@@ -9,7 +9,7 @@ PODS:
     - WeexSDK
   - WeexPluginLoader (0.0.1.9.1):
     - WeexSDK
-  - WeexSDK (0.17.0)
+  - WeexSDK (0.18.0)
 
 DEPENDENCIES:
   - SDWebImage (= 3.7.5)
@@ -23,7 +23,7 @@ SPEC CHECKSUMS:
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   sugo-objc-sdk: caf9029c2e47df3d7faae96ea89013071ce234bd
   WeexPluginLoader: 85c1304f8ba29864e58531614a0acfeceef1b85c
-  WeexSDK: ad8443f4290ef7cb241bbd4c03b02d9dfc9fdca2
+  WeexSDK: ac56f255ce9a48e93ebc2e003956ab20da33321d
 
 PODFILE CHECKSUM: 468bef927b64bb1b6a31392c8f5b1d70c1b8067e
 

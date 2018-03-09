@@ -29,7 +29,7 @@
 			<string>Sugo</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>sugo.1a9f8bed75f2df2489dd272e03a92596</string>
+				<string>sugo.ea437bbf4f70943bb1a8f5aa4968bea4</string>
 			</array>
 		</dict>
 	</array>
@@ -66,38 +66,6 @@
 	<key>WXEntryBundleURL</key>
 	<string>bundlejs/index.js</string>
 	<key>WXSocketConnectionURL</key>
-	<string>ws://169.254.198.39:8080</string>
-  <key>WXEntryBundleURL</key>
-  <string>bundlejs/index.js</string>
-  <key>WXSocketConnectionURL</key>
-  <string></string>
-  <key>WXEntryBundleURL</key>
-  <string>bundlejs/index.js</string>
-  <key>WXSocketConnectionURL</key>
-  <string>ws://169.254.198.39:8080</string>
-  <key>WXEntryBundleURL</key>
-  <string>bundlejs/index.js</string>
-  <key>WXSocketConnectionURL</key>
-  <string></string>
-  <key>WXEntryBundleURL</key>
-  <string>bundlejs/index.js</string>
-  <key>WXSocketConnectionURL</key>
-  <string></string>
-  <key>WXEntryBundleURL</key>
-  <string>bundlejs/index.js</string>
-  <key>WXSocketConnectionURL</key>
-  <string></string>
-  <key>WXEntryBundleURL</key>
-  <string>bundlejs/index.js</string>
-  <key>WXSocketConnectionURL</key>
-  <string></string>
-  <key>WXEntryBundleURL</key>
-  <string>bundlejs/index.js</string>
-  <key>WXSocketConnectionURL</key>
-  <string></string>
-  <key>WXEntryBundleURL</key>
-  <string>bundlejs/index.js</string>
-  <key>WXSocketConnectionURL</key>
-  <string></string>
+	<string>ws://169.254.121.182:8080</string>
 </dict>
 </plist>

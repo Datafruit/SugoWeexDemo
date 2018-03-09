@@ -209,8 +209,11 @@ module.exports = {
 //
 //
 
+var sugo = weex.requireModule("sugo");
+
 module.exports = {
   data: {
+    url: "",
     pagestart: "",
     pagefinish: "",
     title: "",
@@ -218,6 +221,14 @@ module.exports = {
     canGoBack: false,
     canGoForward: false
   },
+  mounted: function mounted() {
+    if (weex.config.env.platform.toLowerCase() == "android") {
+      console.log("sugo.initWebView");
+      sugo.track("test", { aaa: "bbb" });
+      sugo.initWebView(this.$refs.webview);
+    }
+  },
+
   methods: {
     goBack: function goBack() {
       var webview = weex.requireModule("webview");
@@ -235,7 +246,13 @@ module.exports = {
       this.pagestart = e.url;
     },
     onPageFinish: function onPageFinish(e) {
-      this.pagefinish = e.url;
+      if (weex.config.env.platform.toLowerCase() == "android") {
+        console.log("sugo.handleWebView");
+        sugo.handleWebView(e.url, this.$refs.webview);
+      }
+      if (e.url) {
+        this.pagefinish = e.url;
+      }
       this.canGoBack = e.canGoBack;
       this.canGoForward = e.canGoForward;
       if (e.title) {
@@ -262,11 +279,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('web', {
     ref: "webview",
     staticStyle: {
-      width: "730px",
-      height: "1000px"
+      width: "720px",
+      height: "720px"
     },
     attrs: {
-      "src": "https://vuejs.org"
+      "src": "https://www.jd.com/"
     },
     on: {
       "pagestart": _vm.onPageStart,

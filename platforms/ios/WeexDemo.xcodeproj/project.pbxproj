@@ -771,6 +771,7 @@
 					"$(PROJECT_DIR)/WeexDemo",
 					"$(PROJECT_DIR)",
 				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "WeexDemo/WeexDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -815,6 +816,7 @@
 					"$(PROJECT_DIR)/WeexDemo",
 					"$(PROJECT_DIR)",
 				);
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "WeexDemo/WeexDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
