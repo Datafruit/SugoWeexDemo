@@ -2,6 +2,7 @@
   <div class="wrapper">
     <scroller class="scroller">
     <image :src="logo" class="logo"/>
+    <div class="button" @click="aClicked"><text  class="text">a</text></div>
     <div class="button" @click="scrollerClicked"><text  class="text">综合</text></div>
     <div class="button" @click="webClicked"><text  class="text">web</text></div>
     <div class="button" @click="listClicked"><text  class="text">list</text></div>
@@ -10,6 +11,7 @@
     <div class="button" @click="sliderClicked"><text  class="text">slider</text></div>
     <div class="button" @click="switchClicked"><text  class="text">switch</text></div>
     <div class="button" @click="textAreaClicked"><text  class="text">textarea</text></div>
+    <div class="button" @click="inputClicked"><text  class="text">input</text></div>
     <div class="button" @click="videoClicked"><text  class="text">video</text></div>
     </scroller>
   </div>
@@ -34,6 +36,25 @@ export default {
           .split("/")
           .slice(0, -1)
           .join("/") + "/list.js";
+      navigator.push(
+        {
+          url: url,
+          animated: "true"
+        },
+        event => {
+          // modal.toast({ message: 'callback: ' + event })
+          console.log(event);
+        }
+      );
+    },
+    aClicked(event) {
+      console.log("click a");
+      var url = this.$getConfig().bundleUrl;
+      url =
+        url
+          .split("/")
+          .slice(0, -1)
+          .join("/") + "/a.js";
       navigator.push(
         {
           url: url,
@@ -162,6 +183,24 @@ export default {
           .split("/")
           .slice(0, -1)
           .join("/") + "/textarea.js";
+      navigator.push(
+        {
+          url: url,
+          animated: "true"
+        },
+        event => {
+          console.log(event);
+        }
+      );
+    },
+    inputClicked(event) {
+      console.log("click input");
+      var url = this.$getConfig().bundleUrl;
+      url =
+        url
+          .split("/")
+          .slice(0, -1)
+          .join("/") + "/input.js";
       navigator.push(
         {
           url: url,
